@@ -6,6 +6,11 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic">
+    <link rel="stylesheet" href="https://use.typekit.net/c/f24adb/1w;freight-text-pro,2,WHZ:R:i4,WHc:R:i7,WHY:R:n4,WHb:R:n7/d?3bb2a6e53c9684ffdc9a9bf4195b2a62ac2abccc2253da0ff4783e9014f8153f8c23c5d7081aba810434d0b59aa1d4cce00fe3773d738f273902f2f6db2ce5b2e5f2999c6da0c3fc4d7f8b13b2973184584eac2b71c50e670e7726798a0e16f46c859464f0fd85ae854d88206158574bf056c0daf881786d238321">
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
 </head>

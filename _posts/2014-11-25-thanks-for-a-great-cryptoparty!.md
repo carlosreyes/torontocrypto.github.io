@@ -4,7 +4,8 @@ date: 2014-11-24 21:30UTC
 tags:
 category: homepage
 homepage_rank: 3
-layout: subpage
+layout: page
+author: darknetj
 ---
 Thanks for a great CryptoParty!
 
@@ -14,7 +15,8 @@ we couldn't have been more pleased at how it
 turned out! 
 
 The following topics were covered:
-- Online Marketing and how it tracks you
+
+- Big Data: Online Marketing and how it tracks you
 
 - Using the Tor Browser Bundle
 

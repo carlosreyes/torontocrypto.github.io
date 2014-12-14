@@ -2,22 +2,35 @@
 layout: default
 ---
 
-<div class="home">
+<a name="headline" class="headline anchor"></a>
+<section class="odd" id="headline">
+    <div class="row">
+        <div class="large-2 columns">&nbsp;</div>
+        <div class="small-12 large-8 columns">
+            <h3>toronto <strong>#cryptoparty</strong></h3>
 
-  <h1 class="page-heading">Posts</h1>
+            <p>A social movement to reclaim digital privacy.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h4>Next Event: November 23, 2014</h4>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+            <p><a href="#" class="goto" data-goto="event">Learn More</a></p>
+        </div>
+        <div class="large-2 columns">&nbsp;</div>
+    </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% for post in site.categories.front reversed %}
 
-</div>
+<a name="{{ post.anchor }}" class="{{ post.anchor }} anchor"></a>
+<section class="" id="{{ post.anchor }}">
+    <div class="row">
+        <div class="large-2 columns">&nbsp;</div>
+        <div class="small-12 large-8 columns">
+            <h2>{{ post.title }}</h2>
+            {{ post.content }}
+        </div>
+        <div class="large-2 columns">&nbsp;</div>
+    </div>
+</section>
+
+{% endfor %}
