@@ -2,10 +2,18 @@
 ---
 @charset "utf-8";
 
+
 //@import "normalize";
 @import "foundation";
 @import "foundation-icons";
 
+
+$header-font-weight-bold: 800;
+$header-font-weight-normal: 200;
+
+
+
+// generics
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-sans-serif;
@@ -23,6 +31,13 @@ a {
 }
 
 
+
+// layout
+
+.top-bar {
+    padding: 0 50px;
+}
+
 .logo {
     height: 64px;
     margin-right: 4px;
@@ -36,7 +51,7 @@ a {
 }
 
 .content section h2 {
-    font-weight: 800;
+    font-weight: $header-font-weight-bold;
 }
 
 footer {
@@ -48,7 +63,7 @@ footer {
 footer h3 {
     color: #777;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: $header-font-weight-bold;
     margin-bottom: 20px;
 }
 
@@ -63,5 +78,36 @@ footer li:first-child {
 footer li a {
     color: #333;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: $header-font-weight-bold;
+}
+
+
+
+// specific content
+
+#headline {
+    padding: 170px 0 120px;
+    background: url('/img/DSC00397.jpg') 50% 50%;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#headline h1 {
+    font-weight: $header-font-weight-normal;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+#headline p {
+    margin: 0;
+    font-family: $font-family-sans-serif;
+}
+
+#headline h4 {
+    margin: 5rem 0 0;
+}
+
+#headline h1 strong {
+    font-weight: $header-font-weight-bold;
 }
